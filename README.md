@@ -4,7 +4,7 @@
 
 - I don't plan on doing much with this besides prolly adding hscript stuffs lol
 
-- Mods are loaded in order of priority, so if you want a mod to override another mod, it should be loaded after the mod it overrides.
+- Mods are loaded in order of priority.
 
 ```
 haxelib git saturn https://github.com/yophlox/Saturn.git
