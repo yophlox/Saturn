@@ -14,13 +14,16 @@ haxelib git saturn https://github.com/yophlox/Saturn.git
 
 ### Documentation
 
-## Mod.json
+# Mod.json template
 
 ```json
 {
-    "id": "example-mod",
-    "name": "Example Mod",
-    "description": "An example mod for Saturn."
+    "id": "mod-name",
+    "name": "Mod Name",
+    "version": "1.0.0",
+    "author": "you!",
+    "description": "Desc here!",
+    "priority": 1
 }
 ```
 
