@@ -91,7 +91,7 @@ class ModLoader {
         }
     }
 
-    public function getMods():Array<Mod> {
+    public function getMods():Array<Saturn> {
         return mods;
     }
 
