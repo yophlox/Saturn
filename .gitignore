@@ -1,0 +1,16 @@
+# Build products
+[Bb]uild/
+[Ee]xport/
+[Bb]in/
+[Oo]ut/
+[Dd]ebug/
+[Rr]elease/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# IDE data
+.vs/
+.vscode/
+.idea/
+.eclipse/

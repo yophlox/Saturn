@@ -1,0 +1,13 @@
+{
+  "name": "Saturn",
+  "url" : "https://github.com/yophlox/Saturn",
+  "license": "MIT",
+  "tags": ["modding"],
+  "description": "A modding framework for HaxeFlixel games.",
+  "version": "1.0.0",
+  "classPath": "src/",
+  "releasenote": "",
+  "contributors": ["yophlox"],
+  "dependencies": {},
+  "main": "Main"
+}
