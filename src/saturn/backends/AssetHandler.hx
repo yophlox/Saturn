@@ -1,4 +1,4 @@
-package saturn;
+package saturn.backends;
 
 import flixel.FlxG;
 import sys.FileSystem;

@@ -3,6 +3,7 @@ package saturn;
 import flixel.FlxG;
 import sys.FileSystem;
 import haxe.Json;
+import saturn.backends.AssetHandler;
 
 class ModLoader {
     private static var instance:ModLoader;

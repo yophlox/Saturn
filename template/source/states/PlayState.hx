@@ -15,12 +15,12 @@ class PlayState extends FlxState
         for (i in 0...20) {
             var hLine = new FlxSprite(0, i * 40);
             hLine.makeGraphic(FlxG.width, 1, 0x33FFFFFF);
-            hLine.scrollFactor.set(0, 0);  // Add this line
+            hLine.scrollFactor.set(0, 0);
             gridLines.add(hLine);
 
             var vLine = new FlxSprite(i * 40, 0);
             vLine.makeGraphic(1, FlxG.height, 0x33FFFFFF);
-            vLine.scrollFactor.set(0, 0);  // Add this line
+            vLine.scrollFactor.set(0, 0);
             gridLines.add(vLine);
         }
         add(gridLines);
