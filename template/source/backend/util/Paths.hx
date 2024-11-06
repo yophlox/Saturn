@@ -74,19 +74,24 @@ class Paths
 
 	inline static public function txt(key:String, ?library:String)
 	{
-		return getPath('$key.txt', TEXT, library);
+		return AssetHandler.getText('data/${key}.txt');
 	}
 
 	inline static public function xml(key:String, ?library:String)
 	{
-		return getPath('$key.xml', TEXT, library);
+		return AssetHandler.getXML('data/${key}.xml');
+	}
+
+	inline static public function json(key:String, ?library:String)
+	{
+		return AssetHandler.getJson('data/${key}.json');
 	}
 
 	static public function video(key:String)
 	{
 		return 'assets/videos/$key.$VIDEO_EXT';
 	}
-
+	
 	inline public static function directoriesWithFile(path:String, fileToFind:String, mods:Bool = true)
 	{
 		var foldersToCheck:Array<String> = [];
@@ -130,6 +135,6 @@ class Paths
 
 	inline static public function getSparrowAtlas(key:String, ?library:String)
 	{
-		return FlxAtlasFrames.fromSparrow(image(key, library), file('images/$key.xml', library));
+		return AssetHandler.getSparrowAtlas('images/$key.png');
 	}
 }

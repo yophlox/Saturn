@@ -6,6 +6,7 @@ import openfl.utils.Assets;
 import lime.utils.Assets as LimeAssets;
 import sys.io.File;
 import openfl.display.BitmapData;
+import flixel.graphics.frames.FlxAtlasFrames;
 
 class AssetHandler {
     private static var pathCache:Map<String, String> = new Map();
@@ -80,5 +81,20 @@ class AssetHandler {
         }
         
         return openfl.Assets.getSound(finalPath);
+    }
+
+    public static function getSparrowAtlas(path:String) {
+        var xmlPath = StringTools.replace(path, ".png", ".xml");
+        var texture = getBitmapData(path);
+        var xml = getText(xmlPath);
+        return FlxAtlasFrames.fromSparrow(texture, xml);
+    }
+
+    public static function getXML(path:String):Xml {
+        return Xml.parse(getText(path));
+    }
+
+    public static function getJson(path:String):Dynamic {
+        return haxe.Json.parse(getText(path));
     }
 } 
