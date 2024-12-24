@@ -4,5 +4,6 @@
     "version": "1.0.0",
     "author": "yophlox",
     "description": "Swag swag cool shit",
-    "priority": 1
+    "priority": 1,
+    "thumbnail": "thumbnail.png"
 }

@@ -9,6 +9,7 @@ class Saturn {
     public var author:String;
     public var description:String;
     public var priority:Int;
+    public var thumbnail:String;
     
     private var enabled:Bool;
     private var assets:Map<String, String>;
@@ -20,6 +21,7 @@ class Saturn {
         this.author = metadata.author;
         this.description = metadata.description;
         this.priority = metadata.priority != null ? metadata.priority : 0;
+        this.thumbnail = metadata.thumbnail != null ? metadata.thumbnail : "thumbnail.png";
         
         this.enabled = !ModLoader.getInstance().isModDisabled(this.id);
         this.assets = new Map<String, String>();
